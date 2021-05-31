@@ -343,18 +343,28 @@ function inicia_jogo(){
                     }
                     
                     
-                    document.getElementById("t"+movimenta['selecionada']['x']+""+movimenta['selecionada']['y']).innerHTML = ""; //selcionada fica sem imagem
-                    document.getElementById("t"+x+""+y).innerHTML = il[movimenta['selecionada']['cor']][movimenta['selecionada']['peca']]; //destino recebe a imagem da peça selecinada
-                    peca[x][y]['peca']=movimenta['selecionada']['peca'];	//posicao destino recebe a peca
-                    peca[x][y]['cor']=movimenta['selecionada']['cor'];		//posicao destino recebe a cor
+                    document.getElementById("t"+movimenta['selecionada']['x']+""+movimenta['selecionada']['y']).innerHTML = ""; 
+                    //selcionada fica sem imagem
+                    document.getElementById("t"+x+""+y).innerHTML = il[movimenta['selecionada']['cor']][movimenta['selecionada']['peca']];
+                    //destino recebe a imagem da peça selecinada
+                    peca[x][y]['peca']=movimenta['selecionada']['peca'];	
+                    //posicao destino recebe a peca
+                    peca[x][y]['cor']=movimenta['selecionada']['cor'];		
+                    //posicao destino recebe a cor
                                     
-                    peca[movimenta['selecionada']['x']][movimenta['selecionada']['y']]['peca'] = false;		//peca selecionada recebe 0
-                    peca[movimenta['selecionada']['x']][movimenta['selecionada']['y']]['cor'] = false;		//cor selecionada recebe 0
+                    peca[movimenta['selecionada']['x']][movimenta['selecionada']['y']]['peca'] = false;		
+                    //peca selecionada recebe 0
+                    peca[movimenta['selecionada']['x']][movimenta['selecionada']['y']]['cor'] = false;		
+                    //cor selecionada recebe 0
                         
-                    movimenta['selecionada']['x'] =0;	//selecionada x recebe 0 (pra na proxima ver q é o primeiro movimento)
-                    movimenta['selecionada']['y'] =0;	//selecionada y recebe 0 (pra na proxima ver q é o primeiro movimento)
-                    movimenta['selecionada']['peca']="0";	//selecionada peca recebe 0 (pra na proxima ver q é o primeiro movimento)
-                    movimenta['selecionada']['cor']="0";	//selecionada cor recebe 0 (pra na proxima ver q é o primeiro movimento)
+                    movimenta['selecionada']['x'] =0;	
+                    //selecionada x recebe 0 (pra na proxima ver q é o primeiro movimento)
+                    movimenta['selecionada']['y'] =0;	
+                    //selecionada y recebe 0 (pra na proxima ver q é o primeiro movimento)
+                    movimenta['selecionada']['peca']="0";	
+                    //selecionada peca recebe 0 (pra na proxima ver q é o primeiro movimento)
+                    movimenta['selecionada']['cor']="0";	
+                    //selecionada cor recebe 0 (pra na proxima ver q é o primeiro movimento)
                     
                     
                 }
